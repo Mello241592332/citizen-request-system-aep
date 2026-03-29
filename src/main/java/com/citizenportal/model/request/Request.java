@@ -3,6 +3,7 @@ package com.citizenportal.model.request;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
+import com.citizenportal.model.user.User;
 
 // Solicitação de serviço público
 public class Request {
