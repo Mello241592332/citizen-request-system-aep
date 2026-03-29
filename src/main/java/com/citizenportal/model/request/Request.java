@@ -1,5 +1,6 @@
 package com.citizenportal.model.request;
 
+import com.citizenportal.model.user.User;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
