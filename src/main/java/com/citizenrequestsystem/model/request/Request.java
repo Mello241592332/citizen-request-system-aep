@@ -1,6 +1,6 @@
-package com.citizenportal.model.request;
+package com.citizenrequestsystem.model.request;
 
-import com.citizenportal.model.user.User;
+import com.citizenrequestsystem.model.user.User;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
@@ -29,26 +29,16 @@ public class Request {
         this.movements = new ArrayList<>();
     }
 
-    public Request(String protocol, Category category, String description, String location, String neighborhood,
-                   Status status, Priority priority, LocalDateTime createdAt, LocalDateTime updatedAt,
-                   LocalDateTime slaDeadline, String delayJustification, boolean isAnonymous, User user,
-                   List<Attachment> attachments, List<Movement> movements, Sector sector) {
+    public Request(String protocol, String description, User user) {
         this.protocol = protocol;
-        this.category = category;
         this.description = description;
-        this.location = location;
-        this.neighborhood = neighborhood;
-        this.status = status;
-        this.priority = priority;
-        this.createdAt = createdAt;
-        this.updatedAt = updatedAt;
-        this.slaDeadline = slaDeadline;
-        this.delayJustification = delayJustification;
-        this.isAnonymous = isAnonymous;
         this.user = user;
-        this.sector = sector;
-        this.attachments = attachments != null ? attachments : new ArrayList<>();
-        this.movements = movements != null ? movements : new ArrayList<>();
+        this.attachments = new ArrayList<>();
+        this.movements = new ArrayList<>();
+        this.status = Status.EM_ANDAMENTO;      // por exemplo
+        this.priority = Priority.MEDIA;   // valor default
+        this.createdAt = LocalDateTime.now();
+        this.updatedAt = LocalDateTime.now();
     }
 
     public String getProtocol() {

@@ -1,4 +1,4 @@
-package com.citizenportal.model.user;
+package com.citizenrequestsystem.model.user;
 
 public enum Role{
     CIDADAO,

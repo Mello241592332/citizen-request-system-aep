@@ -1,4 +1,4 @@
-package com.citizenportal.model.request;
+package com.citizenrequestsystem.model.request;
 
 import java.time.LocalDateTime;
 
