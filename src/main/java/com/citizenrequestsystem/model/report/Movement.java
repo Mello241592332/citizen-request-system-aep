@@ -1,4 +1,4 @@
-package com.citizenportal.model.report;
+package com.citizenrequestsystem.model.report;
 
 import java.time.LocalDateTime;
 

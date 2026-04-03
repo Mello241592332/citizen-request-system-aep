@@ -1,6 +1,6 @@
-package com.citizenportal.model.report;
+package com.citizenrequestsystem.model.report;
 
-import com.citizenportal.model.request.Sector;
+import com.citizenrequestsystem.model.request.Sector;
 
 public class Authority {
 
